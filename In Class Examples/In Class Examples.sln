@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToWPF", "IntroToWPF\IntroToWPF.csproj", "{04FE7296-75B8-499D-82F7-D6B8E12D7F50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{3FE80C07-1F70-4416-B87E-6B4345147AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSV", "CSV\CSV.csproj", "{3FE80C07-1F70-4416-B87E-6B4345147AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF1", "WPF1\WPF1.csproj", "{8D90DAA8-4EEE-4E4D-B3CB-8D84EFC7A2BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3FE80C07-1F70-4416-B87E-6B4345147AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FE80C07-1F70-4416-B87E-6B4345147AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FE80C07-1F70-4416-B87E-6B4345147AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D90DAA8-4EEE-4E4D-B3CB-8D84EFC7A2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D90DAA8-4EEE-4E4D-B3CB-8D84EFC7A2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D90DAA8-4EEE-4E4D-B3CB-8D84EFC7A2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D90DAA8-4EEE-4E4D-B3CB-8D84EFC7A2BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
