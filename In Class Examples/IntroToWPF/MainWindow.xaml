@@ -12,7 +12,7 @@
         <Label Content="Enter Name" HorizontalAlignment="Left" Margin="111,141,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="114"/>
         <Label Content="Enter Birthday" HorizontalAlignment="Left" Margin="80,243,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.406,0.549" Height="37" Width="145" FontSize="20"/>
         <TextBox x:Name="txtBirthday" HorizontalAlignment="Left" Margin="251,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="37"/>
-        <Button x:Name="btnGo" Content="Go!" HorizontalAlignment="Left" Margin="513,0,0,0" VerticalAlignment="Center" Height="38" Width="103" Background="#FFCBC7C7" FontSize="18" MouseEnter="Button_MouseEnter" Click="btnGo_Click"/>
+        <Button x:Name="btnGo" Content="Go!" HorizontalAlignment="Left" Margin="513,0,0,0" VerticalAlignment="Center" Height="38" Width="103" Background="White" FontSize="18" MouseEnter="Button_MouseEnter" Click="btnGo_Click" MouseLeave="btnGo_MouseLeave"/>
 
     </Grid>
 </Window>

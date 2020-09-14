@@ -33,7 +33,7 @@ namespace IntroToWPF
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
             //change color of background
-            btnGo.Background = new SolidColorBrush(Colors.White);
+            btnGo.Background = new SolidColorBrush(Colors.Blue);
         }
 
         private void btnGo_Click(object sender, RoutedEventArgs e)
@@ -50,6 +50,11 @@ namespace IntroToWPF
             var age = (DateTime.Now - birthdayAsDate).TotalDays/365;
 
             MessageBox.Show($"Welcome {name}, your birthday is {birthdayAsDate.ToShortDateString()}, you are {age:N2} years old");
+        }
+
+        private void btnGo_MouseLeave(object sender, MouseEventArgs e)
+        {
+            btnGo.Background = new SolidColorBrush(Colors.White);
         }
     }
 }
