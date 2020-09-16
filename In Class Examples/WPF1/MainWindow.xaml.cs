@@ -20,6 +20,8 @@ namespace WPF1
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<EntryForm> applications = new List<EntryForm>();
+
         EntryForm entry = new EntryForm();
         
         public MainWindow()
@@ -39,12 +41,21 @@ namespace WPF1
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
+            //assigns user entry to variables
             entry.Name = txtName.Text;
             entry.Address = txtAddress.Text;
             entry.ZipCode = Convert.ToInt32(txtZipcode.Text);
-            
-            
-            MessageBox.Show($"name: {entry.Name} address: {entry.Address} zipcode: {entry.ZipCode}");
+
+            //creates the application and adds it to a list
+            applications.Add(entry);
+            lstApplications.Items.Add(applications);
+
+            //clear textboxes so user can enter another application
+            txtName.Clear();
+            txtAddress.Clear();
+            txtZipcode.Clear();
+                        
+            //MessageBox.Show($"name: {entry.Name} address: {entry.Address} zipcode: {entry.ZipCode}");
         }
     }
 }
