@@ -22,7 +22,7 @@ namespace WPF1
         }
         public override string ToString()
         {
-            return base.ToString();
+            return $"{Name}, {Address} {ZipCode}";
         }
     }
 }
