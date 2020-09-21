@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/originals/1c/b6/0a/1cb60adb1f27f4f138b0bf66480ea9f8.jpg" Stretch="UniformToFill" Opacity="0.8"/>
+        </Grid.Background>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="89,112,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Manufacturer" HorizontalAlignment="Left" Margin="49,153,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="95,194,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Please enter the following information:" HorizontalAlignment="Left" Margin="49,56,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Cooper Black"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="172,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+        <TextBox x:Name="txtManufacturer" HorizontalAlignment="Left" Height="26" Margin="172,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="26" Margin="172,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+        <ListBox x:Name="lstToys" HorizontalAlignment="Left" Height="222" Margin="444,112,0,0" VerticalAlignment="Top" Width="300" MouseDoubleClick="lstToys_MouseDoubleClick"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="210,272,0,0" VerticalAlignment="Top" Width="129" Height="62" Background="White" FontFamily="Cooper Black" FontSize="18" Click="Button_Click"/>
+
+    </Grid>
+</Window>
