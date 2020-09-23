@@ -31,28 +31,33 @@ namespace WPF2
         {
             Toy t = new Toy();
 
-            t.Name = txtName.Text;
-            t.Manufacturer = txtManufacturer.Text;
-            t.Price = Convert.ToDouble(txtPrice.Text);
-
-            //confirm string and double
+            //confirm string
             if (string.IsNullOrEmpty(txtName.Text) == true)
             {
                 MessageBox.Show("Toy name can't be empty!");
             }
-            if (string.IsNullOrEmpty(txtManufacturer.Text) == true)
+            else if (string.IsNullOrEmpty(txtManufacturer.Text) == true)
             {
                 MessageBox.Show("Manufacturer can't be empty!");
             }
-            //price confirmation
-            
+            //confirm double
+            else if (Double.TryParse(txtPrice.Text, out double result) == false)
+            {
+                MessageBox.Show("Price isn't valid!");
+            }
+            else
+            {
+                t.Name = txtName.Text;
+                t.Manufacturer = txtManufacturer.Text;
+                t.Price = Convert.ToDouble(txtPrice.Text);
 
-            Toys.Add(t);
-            lstToys.Items.Add(t.ToString());
+                Toys.Add(t);
+                lstToys.Items.Add(t);
 
-            txtName.Clear();
-            txtManufacturer.Clear();
-            txtPrice.Clear();
+                txtName.Clear();
+                txtManufacturer.Clear();
+                txtPrice.Clear();
+            }
         }
 
         private void lstToys_MouseDoubleClick(object sender, MouseButtonEventArgs e)

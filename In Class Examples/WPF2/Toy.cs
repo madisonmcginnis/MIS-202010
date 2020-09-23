@@ -26,7 +26,7 @@ namespace WPF2
 
             Aisle = $"{Manufacturer[0]}";
 
-            return $"{Aisle}: {priceAsString[decimalLocation-1]}";
+            return $"{Aisle.ToUpper()}: {priceAsString.Substring(0,decimalLocation)}";
 
         }
         public override string ToString()
