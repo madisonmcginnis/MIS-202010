@@ -36,6 +36,16 @@ namespace WPF2
             t.Price = Convert.ToDouble(txtPrice.Text);
 
             //confirm string and double
+            if (string.IsNullOrEmpty(txtName.Text) == true)
+            {
+                MessageBox.Show("Toy name can't be empty!");
+            }
+            if (string.IsNullOrEmpty(txtManufacturer.Text) == true)
+            {
+                MessageBox.Show("Manufacturer can't be empty!");
+            }
+            //price confirmation
+            
 
             Toys.Add(t);
             lstToys.Items.Add(t.ToString());

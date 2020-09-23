@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://i.pinimg.com/originals/1c/b6/0a/1cb60adb1f27f4f138b0bf66480ea9f8.jpg" Stretch="UniformToFill" Opacity="0.8"/>
         </Grid.Background>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="89,112,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Toy Name" HorizontalAlignment="Left" Margin="66,112,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Manufacturer" HorizontalAlignment="Left" Margin="49,153,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Price" HorizontalAlignment="Left" Margin="95,194,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="Please enter the following information:" HorizontalAlignment="Left" Margin="49,56,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Cooper Black"/>
