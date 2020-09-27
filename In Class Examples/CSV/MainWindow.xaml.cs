@@ -50,6 +50,8 @@ namespace CSV
 
         private void btnProcess_Click(object sender, RoutedEventArgs e)
         {
+            filepath = txtFilePath.Text;
+
             var lines = File.ReadAllLines(filepath);
 
             //foreach (var line in lines)
@@ -63,7 +65,7 @@ namespace CSV
                 var pieces = lines[i].Split(',');
 
                 double val = 0;
-                
+
                 bool success = double.TryParse(pieces[2], out val);
                 if (success == false)
                 {
@@ -73,7 +75,7 @@ namespace CSV
                 {
                     sum += val;
                 }
-                
+
                 //sum += Convert.ToDouble(pieces[2]);
                 lstLines.Items.Add(pieces[1]);
             }

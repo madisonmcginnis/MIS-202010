@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="325*"/>
+            <RowDefinition Height="109*"/>
+        </Grid.RowDefinitions>
         <Label Content="Please enter file path:" HorizontalAlignment="Left" Margin="43,103,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFilePath" HorizontalAlignment="Center" Margin="0,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="415" Height="25"/>
-        <Button x:Name="btnProcess" Content="Process" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Height="48" Width="91" Click="btnProcess_Click" IsEnabled="False"/>
-        <ListBox x:Name="lstLines" Margin="10,217,10,10"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Center" Margin="0,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="416" Height="25"/>
+        <Button x:Name="btnProcess" Content="Process" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Height="48" Width="92" Click="btnProcess_Click" IsEnabled="False"/>
+        <ListBox x:Name="lstLines" Margin="0,217,10,0" Grid.RowSpan="2" Height="207" VerticalAlignment="Top" HorizontalAlignment="Right" Width="780"/>
         <Button x:Name="btnSelect" Content="Select" HorizontalAlignment="Left" Margin="634,98,0,0" VerticalAlignment="Top" Height="33" Width="68" Click="btnSelect_Click"/>
 
     </Grid>
