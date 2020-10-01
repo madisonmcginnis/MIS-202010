@@ -22,6 +22,7 @@ namespace JSON_Pokemon
     /// </summary>
     public partial class MainWindow : Window
     {
+        Sprites sprite;
         public MainWindow()
         {
             InitializeComponent();
@@ -49,7 +50,6 @@ namespace JSON_Pokemon
 
             string newWebService = $"{character.url}";
 
-            Sprites sprite;
 
             using (var clientTwo = new HttpClient())
             {
@@ -58,9 +58,30 @@ namespace JSON_Pokemon
                 sprite = JsonConvert.DeserializeObject<Sprites>(pokemonResults);
             }
 
+            //add height and weight to label
             lblInfo.Content = $"{sprite.ToString()}";
-            imgPokemon.Source = new BitmapImage(new Uri(sprite.front_default));
 
+            //define the image with the url and correct id number
+            sprite.front_default = @"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + $"{sprite.id}" + @".png";
+            sprite.back_default = @"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/" +$"{sprite.id}"+@".png";
+            
+            //assigned the front image to the image on the window
+            imgPokemon.Source = new BitmapImage(new Uri(sprite.front_default));
+        }
+
+
+        //these actions are named wrong because I accidentally did the label instead of the picture at first
+        //wrong name, but correct action for the image
+        private void lblInfo_MouseEnter(object sender, MouseEventArgs e)
+        {
+            //assigned back default when mouse enters image
+            imgPokemon.Source = new BitmapImage(new Uri(sprite.back_default));
+        }
+
+        private void lblInfo_MouseLeave(object sender, MouseEventArgs e)
+        {
+            //assigns front default when mouse leaves image
+            imgPokemon.Source = new BitmapImage(new Uri(sprite.front_default));
         }
     }
 }

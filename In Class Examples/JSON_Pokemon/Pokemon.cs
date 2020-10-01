@@ -26,6 +26,7 @@ namespace JSON_Pokemon
     {
         public int height { get; set; }
         public int weight { get; set; }
+        public int id { get; set; }
 
         public override string ToString()
         {

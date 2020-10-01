@@ -10,7 +10,7 @@
         <Label Content="Pokemon" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Elephant" FontWeight="Bold"/>
         <Label Content="Select a Character:" HorizontalAlignment="Left" Margin="79,97,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Calibri"/>
         <ComboBox x:Name="cboPokemon" HorizontalAlignment="Left" Margin="79,137,0,0" VerticalAlignment="Top" Width="241" Height="28" SelectionChanged="cboPokemon_SelectionChanged"/>
-        <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="307" Margin="386,71,0,0" VerticalAlignment="Top" Width="306"/>
+        <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="307" Margin="386,71,0,0" VerticalAlignment="Top" Width="306" MouseEnter="lblInfo_MouseEnter" MouseLeave="lblInfo_MouseLeave"/>
         <Label x:Name="lblInfo" Content="" HorizontalAlignment="Left" Margin="79,203,0,0" VerticalAlignment="Top" Height="175" Width="241" FontSize="18"/>
 
     </Grid>
