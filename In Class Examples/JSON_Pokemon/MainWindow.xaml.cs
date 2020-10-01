@@ -49,19 +49,18 @@ namespace JSON_Pokemon
 
             string newWebService = $"{character.url}";
 
-            Details pokemon;
+            Sprites sprite;
 
             using (var clientTwo = new HttpClient())
             {
                 var pokemonResults = clientTwo.GetStringAsync(newWebService).Result;
 
-                pokemon = JsonConvert.DeserializeObject<Details>(pokemonResults);
+                sprite = JsonConvert.DeserializeObject<Sprites>(pokemonResults);
             }
 
-            lblInfo.Content = $"{pokemon.ToString()}";
-            //imgPokemon.Source = new BitmapImage(new Uri(pokemon.frontImage));
+            lblInfo.Content = $"{sprite.ToString()}";
+            imgPokemon.Source = new BitmapImage(new Uri(sprite.front_default));
 
-            MessageBox.Show($"{pokemon.back_default}");
         }
     }
 }

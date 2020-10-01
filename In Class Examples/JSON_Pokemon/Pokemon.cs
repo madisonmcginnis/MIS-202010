@@ -8,8 +8,6 @@ namespace JSON_Pokemon
 {
     class Pokemon
     {
-        public Info info { get; set; }
-
         public List<Pokemons> results { get; set; }
     }
 
@@ -24,11 +22,18 @@ namespace JSON_Pokemon
         }
     }
 
-    public class Info
+    public class Sprites
     {
-        public int count { get; set; }
-        
-        public string next { get; set; }
-        public string previous { get; set; }
+        public int height { get; set; }
+        public int weight { get; set; }
+
+        public override string ToString()
+        {
+            return $"weight: {weight}\n" +
+                    $"height: {height}";
+        }
+
+        public string front_default { get; set; }
+        public string back_default { get; set; }
     }
 }
