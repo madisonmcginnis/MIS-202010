@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet_Example", "NuGet_Exam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_Pokemon", "JSON_Pokemon\JSON_Pokemon.csproj", "{E730AD56-D27F-4D38-8276-84B155EEC7AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_ChuckNorris", "JSON_ChuckNorris\JSON_ChuckNorris.csproj", "{C3B9C5D6-A8E8-44CC-A9C5-BBCD93F67EBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E730AD56-D27F-4D38-8276-84B155EEC7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E730AD56-D27F-4D38-8276-84B155EEC7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E730AD56-D27F-4D38-8276-84B155EEC7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B9C5D6-A8E8-44CC-A9C5-BBCD93F67EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B9C5D6-A8E8-44CC-A9C5-BBCD93F67EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B9C5D6-A8E8-44CC-A9C5-BBCD93F67EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B9C5D6-A8E8-44CC-A9C5-BBCD93F67EBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
