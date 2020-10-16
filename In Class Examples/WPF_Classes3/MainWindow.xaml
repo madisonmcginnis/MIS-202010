@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Problem1"
+        xmlns:local="clr-namespace:WPF_Classes3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Background>
@@ -34,7 +34,7 @@
         <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Margin="152,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" Height="26"/>
         <Label Content="Please enter your information below:" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White"/>
         <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="523,93,0,0" VerticalAlignment="Top" Height="37" Width="108" Background="White" MouseEnter="btnSubmit_MouseEnter" MouseLeave="btnSubmit_MouseLeave" Click="btnSubmit_Click"/>
-        <ListBox x:Name="lstHandout" Margin="382,147,28,34" Foreground="White" MouseDoubleClick="lstHandout_MouseDoubleClick">
+        <ListBox x:Name="lstHandout" Margin="382,147,28,34" Foreground="White">
             <ListBox.Background>
                 <ImageBrush ImageSource="https://cdn2.newsok.biz/cache/large960_blur-e31c370cfdcdbe08944dfc63bffba4c3.jpg" Opacity="0.7"/>
             </ListBox.Background>
