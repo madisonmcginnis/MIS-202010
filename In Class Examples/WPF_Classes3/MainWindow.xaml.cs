@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GraduationHandout
+namespace WPF_Classes3
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -112,6 +112,20 @@ namespace GraduationHandout
                 txtCity.Clear();
                 txtZipCode.Clear();
             }
+        }
+
+        private void lstHandout_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            StudentInfoWindow infoWindow = new StudentInfoWindow();
+            infoWindow.Show();
+
+            //having similar issue to what I had on Toy Assignment, but can't figure out the fix
+            Student selectedStudent = (Student)lstHandout.SelectedItem;
+
+            infoWindow.lblAddress.Content = selectedStudent.GetAddress();
+            infoWindow.lblName.Content= $"{selectedStudent.FirstName} {selectedStudent.LastName}";
+
+
         }
     }
 }

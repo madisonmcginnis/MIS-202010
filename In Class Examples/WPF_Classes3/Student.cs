@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GraduationHandout
+namespace WPF_Classes3
 {
     class Student
     {
@@ -57,11 +57,17 @@ namespace GraduationHandout
             state = Address.State;
             city = Address.City;
             zipcode = Address.Zipcode;
+
         }
 
         public override string ToString()
         {
             return $"{FirstName} {LastName}, {Major}, {distinction}";
+        }
+
+        public string GetAddress()
+        {
+            return Address.ToString();
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GraduationHandout
+namespace WPF_Classes3
 {
     class Address
     {
@@ -29,6 +29,11 @@ namespace GraduationHandout
             state = State;
             city = City;
             zipcode = Zipcode;
+        }
+
+        public override string ToString()
+        {
+            return $"{StreetNumber} {StreetName}\n{City},{State} {Zipcode}";
         }
     }
 }

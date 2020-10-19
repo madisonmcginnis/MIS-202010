@@ -17,11 +17,17 @@ namespace WPF_Classes3
     /// <summary>
     /// Interaction logic for StudentInfo.xaml
     /// </summary>
-    public partial class StudentInfo : Window
+    public partial class StudentInfoWindow : Window
     {
-        public StudentInfo()
+        //Student selectedStudent;
+        public StudentInfoWindow()
         {
             InitializeComponent();
+        }
+        public void Setup()
+        {
+            //lblAddress.Content = selectedStudent.GetAddress();
+            //lblName.Content = $"{selectedStudent.FirstName} {selectedStudent.LastName}";
         }
     }
 }
